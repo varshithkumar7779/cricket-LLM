@@ -1,0 +1,91 @@
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Full viewport height */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110%;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.heading::after {
+    content: "";
+    width: 110%;
+    height: 4px;
+    border-radius: 1px;
+    bottom: -10px; /* Adjusted to keep it close to the heading */
+    background-color: white;
+    position: absolute;
+}
+
+.form_container {
+    display: flex;
+    margin-top: 20px; /* Adjust margin to control spacing */
+    width: 80%; /* Adjust width as needed */
+    background-color: white;
+    box-shadow: 3px 4px 36px -6px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Added padding for better spacing inside the form */
+}
+
+.from_heading {
+    font-size: 25px;
+    font-weight: 400;
+    color: #2c444e;
+    margin-bottom: 30px;
+}
+
+.google_btn {
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: #2c444e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.google_btn > img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.google_btn > span {
+    margin-left: 10px;
+}
